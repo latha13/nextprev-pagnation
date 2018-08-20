@@ -1,0 +1,76 @@
+table,td
+{
+    margin: 10px 0;
+    text-align:center;
+    padding: 2px 4px;
+    font: 15px Verdana;
+    background-color: black;
+
+}
+table{
+    width: 100%;
+}
+th {
+    margin: 0px 0;
+    background-color: #424242;
+    font-weight:bold;
+    color: green;
+}
+tr {
+    color: white;
+
+}
+
+ /* pagination-controls /deep/ .ngx-pagination .current {
+    color: white;
+    background-color:green;
+    cursor: default;
+    background-clip: content-box;
+   
+}
+*/
+pagination-controls /deep/ .ngx-pagination .pagination-next, 
+pagination-controls /deep/ .ngx-pagination .pagination-previous{
+    background-color: green;
+    background-clip: content-box;
+}
+pagination-controls /deep/ .ngx-pagination .pagination-previous a::before,
+pagination-controls /deep/ .ngx-pagination .pagination-previous.disabled::before { 
+  content: '';
+  display: inline-block;
+   margin-right: 0.5rem; }
+  pagination-controls /deep/ .ngx-pagination .pagination-next a::after,
+pagination-controls /deep/ .ngx-pagination .pagination-next.disabled::after {
+  content: '';
+  display: inline-block;
+  margin-left: 0.5rem; 
+  background-clip: content-box; 
+  outline-color: white; 
+}
+pagination-controls /deep/  .ngx-pagination a, .ngx-pagination button
+{
+    outline-color: white;     
+}
+  .hide-page-numbers /deep/ .ngx-pagination {
+    text-align: right;  
+     padding-right: 10px;
+     background-clip: content-box; 
+
+  }
+  
+  .hide-page-numbers /deep/ .ngx-pagination li:not(.pagination-previous):not(.pagination-next) {
+    display: none;
+    background-clip: content-box; 
+  }
+  li {
+    margin-bottom: 5px;
+    padding: 15px;
+    background-clip: content-box; 
+  }
+  
+  pagination-controls /deep/ .ngx-pagination .pagination-next, 
+pagination-controls /deep/ .ngx-pagination .pagination-previous{
+    margin:5px 10px;
+    background-clip: content-box;
+    background-color:green;
+}
